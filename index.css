@@ -1,0 +1,95 @@
+/* 리셋 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 첫번째 섹션 */
+.first__section {
+    background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    height: 550px;
+    padding: 24px;
+    padding-top : 48px;
+    color: white;
+}
+
+.first__container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f__intro-h1,
+.f__intro-p {
+    margin-bottom: 16px;
+}
+
+.f__intro-h1 {
+    font-size: 36px;
+}
+
+.f__intro-p {
+    font-size: 24px;
+}
+
+/* 첫번째 섹션 버튼 */
+.f__intro-btn {
+    padding: 16px;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.f__intro-btn:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+.first__image {
+    width: 400px;
+}
+
+.first-image{
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+    top: 0;
+}
+
+.first-image:hover{
+    cursor:pointer;
+    top: -20px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 992px) {
+
+    .first__container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first__intro {
+        margin-bottom: 38px;
+    }
+    
+
+    .f__intro-btn{
+        font-size: 20px;
+    }
+
+    .first__image{
+        width: 280px;
+    }
+    
+}
